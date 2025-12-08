@@ -20,8 +20,7 @@ mrcheck <- function(data,
                             "recap",
                             "mortality",
                             "fin_clip",
-                            "fin_recap",
-                            "glued")) {
+                            "fin_recap")) {
   
   pacman::p_load(tidyverse,
                  foreach)
