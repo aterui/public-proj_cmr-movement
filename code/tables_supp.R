@@ -145,10 +145,11 @@ print(xtable(tab_coef,
 
 
 # Table of Habitat Variables -----------------------------------------------
-df_water <- df_daily %>% 
-  reframe(Mean = mean(daily_water_temp),
-          "Standard Deviation" = sd(daily_water_temp),
-          "habitat_variable" = "temp") 
+
+# df_water <- df_daily %>% 
+#   reframe(Mean = mean(daily_water_temp),
+#           "Standard Deviation" = sd(daily_water_temp),
+#           "habitat_variable" = "temp") 
 
 tab_hab <- df_h_sec %>% 
   select(c(area, width, area_ucb, depth_mean, velocity_mean, substrate_mean)) %>% 
